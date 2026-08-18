@@ -12,3 +12,79 @@ body{
   color: #fafafa; /* zinc-50 */
   height: 200vh;
 }
+
+:root{
+  --max-width: 1200px;
+  /* --container-padding: 20px; */
+  --bg: #18181b;
+  --card: #23232b;
+  --accent: #00bcd4;
+}
+
+/* Central container used across components */
+.container {
+  max-width: var(--max-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Global responsive typography tweaks */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+/* General utility: make images responsive */
+img{ max-width:100%; height:auto; display:block; }
+
+/* Breakpoints: mobile-first */
+@media (min-width: 640px) {
+  :root{ --container-padding: 28px; }
+}
+@media (min-width: 900px) {
+  :root{ --container-padding: 36px; }
+}
+
+/* Mobile base font size for all pages */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  /* ensure form controls and links follow the base size */
+  input, button, textarea, select, a, label {
+    font-size: 0.8rem;
+  }
+  h2,h3 {
+    font-size: 1rem !important;
+  }
+  p,span{
+    font-size: 0.8rem !important;
+
+  }
+  div,section,article,header,footer{
+    font-size: 0.8rem !important;
+  }}
+@media (max-width: 900px) {
+  body {
+    font-size: 1rem;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  /* ensure form controls and links follow the base size */
+  input, button, textarea, select, a, label {
+    font-size: 1rem;
+  }
+  h2,h3 {
+    font-size: 1.25rem !important;
+  }
+  p,span{
+    font-size: 1rem !important;
+
+  }
+  div,section,article,header,footer{
+    font-size: 1rem !important;
+  
+}}

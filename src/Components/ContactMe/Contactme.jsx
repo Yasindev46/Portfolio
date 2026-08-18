@@ -10,39 +10,6 @@ const Contactme = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // const socialLinks = [
-  //   {
-  //     name: "Email",
-  //     icon: (
-  //       <i
-  //         className="fa fa-envelope"
-  //         style={{ fontSize: 24, color: "#00bcd4" }}
-  //       />
-  //     ),
-  //     url: "mailto:your.email@example.com",
-  //   },
-  //   {
-  //     name: "LinkedIn",
-  //     icon: (
-  //       <i
-  //         className="fa fa-linkedin-square"
-  //         style={{ fontSize: 24, color: "#00bcd4" }}
-  //       />
-  //     ),
-  //     url: "https://linkedin.com/in/yourprofile",
-  //   },
-  //   {
-  //     name: "GitHub",
-  //     icon: (
-  //       <i
-  //         className="fa fa-github"
-  //         style={{ fontSize: 24, color: "#00bcd4" }}
-  //       />
-  //     ),
-  //     url: "https://github.com/yourusername",
-  //   },
-  // ];
-
   const socialLinks = [
     {
       name: "Phone",
