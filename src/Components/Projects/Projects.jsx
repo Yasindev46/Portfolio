@@ -4,32 +4,40 @@ import './Projects.css';
 const projects = [
   {
     id: 1,
-    title: 'Portfolio Website',
-    image: '/public/images/portfolio-.jpg',
-    description: 'A modern portfolio website built with React and Tailwind CSS.',
-    details: 'This project showcases my personal portfolio, including my skills, projects, and contact information. Built with React, Tailwind CSS, and deployed on Vercel.',
+    title: 'UBS Online Banking',
+    image: '/public/images/bank.jpg',
+    description: 'UBS Banking Application for managing financial services.',
+    details: 'Developed and maintained UI for Infosys client (UBS Banking Project) using React.js, TypeScript, Redux, and Zustand. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
   },
-  {
+  
+   {
     id: 2,
-    title: 'Danata Airlines Project',
-    image: '/public/images/folder.jpg',
-    description: 'Ticket bookings system.',
-    details: 'Developed and maintained UI for Coforge client (Danata Airlines Project) using React.js, TypeScript, Redux, and Bootstrap. - Contributed to UI development projects focusing on responsiveness and enhancing user experience. - Actively participated in Agile Scrum processes for timely delivery.',
-  },
-  {
-    id: 3,
-    title: 'Westpac Banking Project',
+    title: 'Westpac Digital Banker',
     image: '/public/images/bank.jpg',
     description: 'Westpac Banking Application for managing financial services.',
     details: 'Developed and maintained UI for Infosys client (Westpac Banking Project) using React.js, TypeScript, Redux, and Bootstrap. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
   },
   {
-    id: 4,
-    title: 'UBS Banking Project',
-    image: '/public/images/bank.jpg',
-    description: 'UBS Banking Application for managing financial services.',
-    details: 'Developed and maintained UI for Infosys client (UBS Banking Project) using React.js, TypeScript, Redux, and Zustand. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
+    id: 3,
+    title: 'Danata Airlines Project',
+    image: '/public/images/folder.jpg',
+    description: 'Ticket booking and management system for Danata Airlines',
+    details: 'Developed and maintained UI for Coforge client (Danata Airlines Project) using React.js, TypeScript, Redux, and Bootstrap. - Contributed to UI development projects focusing on responsiveness and enhancing user experience. - Actively participated in Agile Scrum processes for timely delivery.',
   },
+  {
+    id: 4,
+    title: 'WeGiver',
+    image: '/public/images/folder.jpg',
+    description: 'WeGiver Platform for managing charitable donations.',
+    details: 'Developed and maintained UI WeGiver Project using React.js, TypeScript, Redux. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with other teams. - Conducted user research to inform design decisions.',
+  },
+  {
+    id: 5,
+    title: 'Portfolio Website',
+    image: '/public/images/portfolio-.jpg',
+    description: 'A modern portfolio website built with React and Tailwind CSS.',
+    details: 'This project showcases my personal portfolio, including my skills, projects, and contact information. Built with React, Tailwind CSS, and deployed on Vercel.',
+  }
 ];
 
 const Projects = () => {

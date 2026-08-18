@@ -14,7 +14,6 @@ const Header = () => {
       <a href="#" className="header-logo">
         <h1 className="header-portfolio">Yasin Mulla</h1>
       </a>
-      <i className="fa fa-bars"></i>
       <nav className="menu-bar">
         {menuItems.map((item) => (
           <a key={item.name} href={item.href} className="">
