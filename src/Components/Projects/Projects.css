@@ -1,0 +1,126 @@
+.projects-section {
+  padding: 40px 20px;
+  background: #18181b;
+  color: #fafafa;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #23232b;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 24px 18px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(124,124,246,0.25);
+  background: #00bcd4;
+}
+
+.project-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.project-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #e0e0e0;
+}
+
+/* Modal styles */
+.project-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(24,24,27,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.project-modal-content {
+  background: #23232b;
+  padding: 32px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.project-modal-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  margin-top: 1.5rem;
+  padding: 8px 20px;
+  background: #0141a7;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: #7f7ffb;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .projects-grid {
+    gap: 1rem;
+  }
+  .project-card {
+    width: 140px;
+    padding: 16px 8px;
+  }
+  .project-image {
+    height: 80px;
+  }
+  .project-modal-content {
+    padding: 16px 8px;
+    max-width: 90vw;
+  }
+  .project-modal-image {
+    height: 100px;
+  }
+}

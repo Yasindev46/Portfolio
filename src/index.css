@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+/* Removed @plugin 'tailwind-scrollbar'; - configure in tailwind.config.js */
+
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #18181b; /* zinc-900 */
+  color: #fafafa; /* zinc-50 */
+  height: 200vh;
+}
