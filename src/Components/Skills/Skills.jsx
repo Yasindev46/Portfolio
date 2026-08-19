@@ -4,77 +4,77 @@ import './Skills.css';
 const skills = [
   {
     name: 'React',
-    logo: '/public/images/react.png',
+    logo: '/public/react.png',
     description:'Framework'
   },
   {
     name: 'JavaScript',
-    logo: '/public/images/js.png',
+    logo: '/public/js.png',
     description:'Interaction'
   },
   {
     name: 'TypeScript',
-    logo: '/public/images/ts.png',
+    logo: '/public/ts.png',
     description:'Interaction'
   },
   {
     name: 'HTML5',
-    logo: '/public/images/html.png',
+    logo: '/public/html.png',
     description:'Markup Language'
   },
   {
     name: 'CSS3',
-    logo: '/public/images/css.png',
+    logo: '/public/css.png',
     description:'User Interface'
   },
   {
     name: 'Tailwind CSS',
-    logo: '/public/images/tailwind.png',
+    logo: '/public/tailwind.png',
     description:'User Interface'
   },
   {
     name: 'Less',
-    logo: '/public/images/less.png',
+    logo: '/public/less.png',
     description:'User Interface'
   },
   {
     name: 'Figma',
-    logo: '/public/images/figma.png',
+    logo: '/public/figma.png',
     description:'User Interface'
   },
   {
     name: 'Redux',
-    logo: '/public/images/redux.jpeg',
+    logo: '/public/redux.jpeg',
     description:'State Management'
   },
   {
     name: 'Git',
-    logo: '/public/images/git.jpg',
+    logo: '/public/git.jpg',
     description:'Version Control'
   },
   {
     name: 'GHCP',
-    logo: '/public/images/copilot.png',
+    logo: '/public/copilot.png',
     description:'AI Coding agent'
   },
   {
     name: 'Codex',
-    logo: '/public/images/codex.jpg',
+    logo: '/public/codex.jpg',
     description:'AI Coding agent'
   },
   {
     name: 'Node.js',
-    logo: '/public/images/node.jpeg',
+    logo: '/public/node.jpeg',
     description:'Server-side Runtime'
   },
   {
     name: 'Express.js',
-    logo: '/public/images/express.png',
+    logo: '/public/express.png',
     description:'Server-side Runtime'
   },
   {
     name: 'MongoDB',
-    logo: '/public/images/mongo.jpeg',
+    logo: '/public/mongo.jpeg',
     description:'Database'
   },
 ];
