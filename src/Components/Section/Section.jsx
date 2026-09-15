@@ -17,7 +17,7 @@ const Section = () => {
         </p>
       </div>
         <img
-        src="/public/hero2.jpg "
+        src="/Portfolio/hero2.jpg "
         alt="Developer"
         className='glow-img'
       />
