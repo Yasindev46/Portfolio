@@ -4,77 +4,77 @@ import './Skills.css';
 const skills = [
   {
     name: 'React',
-    logo: '/public/react.png',
+    logo: '/Portfolio/react.png',
     description:'Framework'
   },
   {
     name: 'JavaScript',
-    logo: '/public/js.png',
+    logo: '/Portfolio/js.png',
     description:'Interaction'
   },
   {
     name: 'TypeScript',
-    logo: '/public/ts.png',
+    logo: '/Portfolio/ts.png',
     description:'Interaction'
   },
   {
     name: 'HTML5',
-    logo: '/public/html.png',
+    logo: '/Portfolio/html.png',
     description:'Markup Language'
   },
   {
     name: 'CSS3',
-    logo: '/public/css.png',
+    logo: '/Portfolio/css.png',
     description:'User Interface'
   },
   {
     name: 'Tailwind CSS',
-    logo: '/public/tailwind.png',
+    logo: '/Portfolio/tailwind.png',
     description:'User Interface'
   },
   {
     name: 'Less',
-    logo: '/public/less.png',
+    logo: '/Portfolio/less.png',
     description:'User Interface'
   },
   {
     name: 'Figma',
-    logo: '/public/figma.png',
+    logo: '/Portfolio/figma.png',
     description:'User Interface'
   },
   {
     name: 'Redux',
-    logo: '/public/redux.jpeg',
+    logo: '/Portfolio/redux.jpeg',
     description:'State Management'
   },
   {
     name: 'Git',
-    logo: '/public/git.jpg',
+    logo: '/Portfolio/git.jpg',
     description:'Version Control'
   },
   {
     name: 'GHCP',
-    logo: '/public/copilot.png',
+    logo: '/Portfolio/copilot.png',
     description:'AI Coding agent'
   },
   {
     name: 'Codex',
-    logo: '/public/codex.jpg',
+    logo: '/Portfolio/codex.jpg',
     description:'AI Coding agent'
   },
   {
     name: 'Node.js',
-    logo: '/public/node.jpeg',
+    logo: '/Portfolio/node.jpeg',
     description:'Server-side Runtime'
   },
   {
     name: 'Express.js',
-    logo: '/public/express.png',
+    logo: '/Portfolio/express.png',
     description:'Server-side Runtime'
   },
   {
     name: 'MongoDB',
-    logo: '/public/mongo.jpeg',
+    logo: '/Portfolio/mongo.jpeg',
     description:'Database'
   },
 ];
