@@ -9,4 +9,7 @@ export default defineConfig({
     tailwindcss()
   ],
   base: '/yasin-portfolio/',
+  server: {
+    port: 3001,
+  },
 })
