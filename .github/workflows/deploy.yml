@@ -2,7 +2,7 @@ name: yasin portfolio deploy
 on:
   push:
     branches:
-      - responsive
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
