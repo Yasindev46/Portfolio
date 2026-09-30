@@ -1,0 +1,18 @@
+name: validate html
+on: 
+    workflow_dispatch:
+    push:
+        branches:
+            - master
+jobs: 
+    validate-files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+            
+            - name: validate html file
+              run: test -f index.html
+
+            - name: check html code
+              run: npx html-validate index.html 
