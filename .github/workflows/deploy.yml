@@ -5,6 +5,15 @@ on:
     branches:
       - master
 jobs:
+  validat-html-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: load code
+        uses: actions/checkout@v4
+
+      - name: validate html file if exist
+        run: test -f index.html
+  
   deploy:
     runs-on: ubuntu-latest
     steps:
