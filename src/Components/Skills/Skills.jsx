@@ -77,6 +77,11 @@ const skills = [
     logo: '/Portfolio/mongo.jpeg',
     description:'Database'
   },
+  {
+    name: 'CICD',
+    logo: '/Portfolio/cicd.png',
+    description:'Continuous Integration/Deployment'
+  },
 ];
 
 const Skills = () => {
