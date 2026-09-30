@@ -15,4 +15,4 @@ jobs:
               run: test -f index.html
 
             - name: check html code
-              run: npx html-validate index.html 
+              run: npx htmlhint index.html 
