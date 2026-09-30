@@ -7,7 +7,7 @@ const projects = [
     title: 'UBS Online Banking',
     image: '/Portfolio/bank.jpg',
     description: 'UBS Banking Application for managing financial services.',
-    details: 'Developed and maintained UI for Infosys client (UBS Banking Project) using React.js, TypeScript, Redux, and Zustand. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
+    details: 'Developed and maintained UI for Infosys client (UBS wealth management) using React.js, TypeScript, Redux, and Zustand. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
   },
   
    {
@@ -15,7 +15,7 @@ const projects = [
     title: 'Westpac Digital Banker',
     image: '/Portfolio/bank.jpg',
     description: 'Westpac Banking Application for managing financial services.',
-    details: 'Developed and maintained UI for Infosys client (Westpac Banking Project) using React.js, TypeScript, Redux, and Bootstrap. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
+    details: 'Developed and maintained UI for Infosys client (Westpac online Banking) using React.js, TypeScript, Redux, and Bootstrap. - Designed reusable components, optimizing application performance and reducing load times. - Collaborated with teams for seamless API integration and responsive design. - Conducted user research to inform design decisions.',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const projects = [
     title: 'Portfolio Website',
     image: '/Portfolio/portfolio-.jpg',
     description: 'A modern portfolio website built with React and Tailwind CSS.',
-    details: 'This project showcases my personal portfolio, including my skills, projects, and contact information. Built with React, Tailwind CSS, and deployed on Vercel.',
+    details: 'This project showcases my personal portfolio, including my skills, projects, and contact information. Built with React, Tailwind CSS, and deployed on Github Pages.',
   }
 ];
 

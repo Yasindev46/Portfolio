@@ -13,7 +13,10 @@ const Section = () => {
           Software Developer
         </h2>
         <p className='section-subheading' >
-          I'm a passionate <strong>Software Developer</strong> specializing in building modern web applications with React, JavaScript, and Tailwind CSS. I love solving problems, learning new technologies, and collaborating with creative teams to deliver impactful digital experiences.
+          I'm a passionate <strong>Software Developer</strong> specializing in building modern web applications 
+          with React.js, JavaScript, TypeScript, Redux and Tailwind CSS. 
+          I love solving problems, learning new technologies, and collaborating 
+          with creative teams to deliver impactful digital experiences.
         </p>
       </div>
         <img

@@ -29,7 +29,9 @@ const About = () => {
       <h2 className="about-heading" >About Me</h2>
       <p className="about-description">
         I'm Yasin, a passionate software developer focused on building modern,
-        scalable web applications. I enjoy learning new technologies,
+        scalable web applications. My primarily responsibility is to translate 
+        UI/UX design into pixel perfect user interfaces, ensuring responsiveness 
+        and accessibility compliance. I enjoy learning new technologies,
         collaborating with creative teams, and solving real-world problems
         through code.
       </p>
