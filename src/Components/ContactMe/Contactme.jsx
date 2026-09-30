@@ -4,7 +4,6 @@ import "./Contactme.css";
 
 const Contactme = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [sent, setSent] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -75,7 +74,6 @@ const Contactme = () => {
     if (serviceId && templateId && publicKey) {
       try {
         await emailjs.send(serviceId, templateId, templateParams, publicKey);
-        setSent(true);
         setForm({ name: "", email: "", message: "" });
       } catch (err) {
         console.error('EmailJS send error:', err);
@@ -88,7 +86,6 @@ const Contactme = () => {
       const body = `Name: ${encodeURIComponent(form.name)}%0AEmail: ${encodeURIComponent(form.email)}%0AMessage:%0A${encodeURIComponent(form.message)}`;
       window.location.href = `mailto:yasinmuidev46@gmail.com?subject=${encodeURIComponent('Website Contact')}&body=${body}`;
     }
-    setSent(true);
     setForm({ name: "", email: "", message: "" });
   };
   return (
@@ -122,11 +119,6 @@ const Contactme = () => {
           rows={5}
         />
         <button type="submit">Send Message</button>
-        {/* {sent && (
-          <span style={{ color: "#7f7ffb", marginTop: "8px" }}>
-            Message sent! Thank you.
-          </span>
-        )} */}
       </form>
      
       <div className="about-social">
