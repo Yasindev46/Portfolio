@@ -15,6 +15,7 @@ jobs:
         run: test -f index.html
   
   deploy:
+    needs: validat-html-file
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
