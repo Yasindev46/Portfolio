@@ -5,7 +5,7 @@ const About = () => {
   const stats = [
   {
     label: "Experience",
-    value: "6+ Years",
+    value: "6.3 Years",
     icon: <i className="fa fa-briefcase" style={{ fontSize: 28, color: "#00bcd4" }} />,
   },
   {
