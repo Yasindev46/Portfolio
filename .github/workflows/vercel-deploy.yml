@@ -1,0 +1,105 @@
+name: vercel deploy
+on:
+  workflow_dispatch:        # this is for manual trigger of the workflow
+  # push:                     // this is for automatic trigger of the workflow on push to master branch
+  #   branches:
+  #     - master
+jobs:
+  ESlint-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: run ESlint in app
+        run: npm run lint
+
+  run-test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: run all test cases
+        run: npm run test
+
+  build-job:
+    needs: [ESlint-job, run-test-job]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+  
+  artifacts-download-job:
+    needs: [ESlint-job, run-test-job, build-job]
+    runs-on: ubuntu-latest
+
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} # this is for storing the vercel token in the environment variable
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }} # this is for storing the vercel org id in the environment variable
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }} # this is for storing the vercel project id in the environment variable
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Upload artifacts              # this is for uploading the build artifacts to be used in the deploy job
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: dist/
+          retention-days: 7
+
+  deploy-vercel-job:
+    needs: [artifacts-download-job]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Intall vercel cli
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }} #this will build artifacts on Vercel and deploy 
+        # run: vercel deploy dist --prod --yes --token ${{ secrets.VERCEL_TOKEN }} #this is for deploying the build artifacts to Vercel
+   
